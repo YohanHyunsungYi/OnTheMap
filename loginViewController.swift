@@ -45,7 +45,7 @@ class LoginViewController: UIViewController {
 
     //MARK: - Get Udacity sessionID
       udacityLogin(id: idTextField.text!, pw: pwTextField.text!){result, error in
-        if error == nil{
+        if result {
           //MARK: - Log In Success
           self.performSegue(withIdentifier: "loginSegue", sender: self)   
         } else {
